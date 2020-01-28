@@ -17,7 +17,7 @@
 ### Usage  (very rough, your code will differ!)
 
     const parse_retry_after = require('parse-retry-after');  // or import...
-    
+
     fetch(URL, init)
       .then(function(response) {
         // probably want to save response somewhere somehow...
@@ -32,9 +32,10 @@
           // normal "happy path" code
         }
       })
-      
+
 
 ### Todos
 
  1. Currently uses `module.exports`, should probably use ES6 `export`
- 
+
+ - see parse-retry-after6.mjs   for first pass at an ES6 export.

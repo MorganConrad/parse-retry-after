@@ -1,6 +1,5 @@
 
 function calcRetryAfterSeconds(response) {
-
   if (!response || !response.headers)
     return 0;
 
@@ -17,7 +16,7 @@ function calcRetryAfterSeconds(response) {
     throw Error('Unexpected Retry-After value: ' + headerSays);
 
   let deltaMS = retryDateMS - Date.now();
-  return (deltaMS > 0) ? Math.ceil(deltaMS / 1000) : 1;
+  return (deltaMS > 0) ? Math.ceil(deltaMS/1000) : 1;
 }
 
-module.exports = calcRetryAfterSeconds;
+export default calcRetryAfterSeconds;

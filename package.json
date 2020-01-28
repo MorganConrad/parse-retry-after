@@ -1,11 +1,20 @@
 {
   "name": "parse-retry-after",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Parses an HTTP Retry-After header and returns delay time in seconds.",
   "main": "parse-retry-after.js",
   "scripts": {
-    "test": "nyc --reporter=lcov tape test/test.js",
-    "coverage": "nyc --reporter=text-lcov report | coveralls"
+    "test": "node --experimental-modules ./test/test.mjs",
+    "coverage": "nyc --reporter=text-lcov report | coveralls",
+    "lint": "eslint --parser-options=sourceType:module *.js *.mjs"
+  },
+  "nyc": {
+    "extension": [
+      ".mjs"
+    ],
+    "reporter": [
+      "lcov"
+    ]
   },
   "repository": {
     "type": "git",
@@ -18,9 +27,9 @@
     "fetch"
   ],
   "devDependencies": {
-    "nyc": "^11.2.0",
-    "tape": "^4.6",
-    "coveralls": "^3.0"
+    "coveralls": "^3.0",
+    "nyc": "^15.0.0",
+    "tape": "^4.6"
   },
   "author": "Morgan Conrad <flyingspaniel@gmail.com> (http://flyingspaniel.com/)",
   "license": "MIT",
