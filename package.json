@@ -1,6 +1,6 @@
 {
   "name": "parse-retry-after",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Parses an HTTP Retry-After header and returns delay time in seconds.",
   "main": "parse-retry-after.js",
   "scripts": {
