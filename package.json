@@ -27,9 +27,9 @@
     "fetch"
   ],
   "devDependencies": {
-    "coveralls": "^3.0",
-    "nyc": "^15.0.0",
-    "tape": "^4.6"
+    "coveralls": "^3.1",
+    "nyc": "^15.1.0",
+    "tape": "^5.2"
   },
   "author": "Morgan Conrad <flyingspaniel@gmail.com> (http://flyingspaniel.com/)",
   "license": "MIT",
